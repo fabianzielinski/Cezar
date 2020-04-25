@@ -1,0 +1,12 @@
+body {
+  margin: 0; }
+
+* {
+  box-sizing: border-box; }
+
+div {
+  float: left;
+  width: 50%; }
+
+#input {
+  margin: 5% 30%; }

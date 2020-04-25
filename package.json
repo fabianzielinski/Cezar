@@ -1,0 +1,31 @@
+{
+  "name": "cezar-code",
+  "version": "1.0.0",
+  "description": "Cezar code",
+  "main": "index.js",
+  "scripts": {
+    "build:scss": "node-sass --output--style compressed -o dist/styles src/styles",
+    "watch:scss": "onchange -v 'src/styles/*.scss' --npm run build:scss",
+    "start": "browser-sync -s -f './index.html, /dist/**/*, /src/**/*'",
+    "watch": "npm-run-all start -p watch:scss ",
+    "watch:all": "parallelshell 'npm start' 'npm run watch:scss'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabianzielinski/Cezar.git"
+  },
+  "author": "Fabz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabianzielinski/Cezar/issues"
+  },
+  "homepage": "https://github.com/fabianzielinski/Cezar#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "eslint": "^6.8.0",
+    "node-sass": "^4.13.1",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^6.1.0",
+    "parallelshell": "^3.0.1"
+  }
+}
