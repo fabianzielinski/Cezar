@@ -1,12 +1,21 @@
-body {
-  margin: 0; }
-
 * {
   box-sizing: border-box; }
-
-div {
-  float: left;
-  width: 50%; }
-
-#input {
-  margin: 5% 30%; }
+  * body {
+    margin: 0;
+    padding: 5% 20%;
+    background-color: #f7f4f4; }
+    * body div {
+      float: left;
+      width: 50%; }
+      * body div button {
+        margin: 5% 1%;
+        background-color: #d8d8d8;
+        border-radius: 10%;
+        padding: 2%;
+        font-size: 18px;
+        font-weight: bold; }
+        * body div button a {
+          text-decoration: none;
+          color: #000000; }
+      * body div #input {
+        margin: 5% 1%; }
